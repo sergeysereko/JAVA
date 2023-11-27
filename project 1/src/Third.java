@@ -21,5 +21,7 @@ public class Third {
         int result = Integer.parseInt(union);
 
         System.out.println("Ваше число - "+ result);
+
+        scanner.close();
     }
 }

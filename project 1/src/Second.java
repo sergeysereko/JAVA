@@ -15,5 +15,7 @@ public class Second {
 
          System.out.println(percent+ "%"+ " от "+ number + " составляет " + result);
 
+         scanner.close();
+
     }
 }
