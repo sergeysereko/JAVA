@@ -14,9 +14,9 @@ public class Eleventh {
         int length = scanner.nextInt();
 
         System.out.print("Введите направление \n" +
-                "horizontal - введите h\n" +
-                " vertical - введите v): ");
-        String direction = scanner.next();
+                "horizontal - кнопка 1\n" +
+                "vertical - кнопка 2): ");
+        int direction = scanner.nextInt();
 
         System.out.print("Введите символ: ");
         char symbol = scanner.next().charAt(0);
@@ -28,13 +28,13 @@ public class Eleventh {
         scanner.close();
     }
 
-    static void drawLine(int length, String direction, char symbol) {
-        if ("h".equalsIgnoreCase(direction)) {
+    static void drawLine(int length, int direction, char symbol) {
+        if (direction == 1) {
             drawHorizontalLine(length, symbol);
-        } else if ("v".equalsIgnoreCase(direction)) {
+        } else if (direction == 2) {
             drawVerticalLine(length, symbol);
         } else {
-            System.out.println("Некорректное направление. Используйте 'h' или 'v'.");
+            System.out.println("Некорректное направление. Используйте 1 или 2");
         }
     }
 
