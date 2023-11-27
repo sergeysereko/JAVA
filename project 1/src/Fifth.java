@@ -25,6 +25,7 @@ public class Fifth {
             System.out.println("Error");
         }
 
+        scanner.close();
     }
 
 }

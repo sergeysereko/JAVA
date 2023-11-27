@@ -31,5 +31,6 @@ public class Sixth {
             System.out.println("Erorr");
         }
 
+        scanner.close();
     }
 }

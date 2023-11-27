@@ -1,6 +1,15 @@
+
+/*Показать на экран таблицу умножения в диапазоне,
+указанном пользователем. Например, если пользователь
+указал 3 и 5, таблица может выглядеть так:
+3*1 = 3 3*2 = 6 3*3 = 9 ………… 3* 10 = 30
+……………………………………………………
+5*1 = 5 5 *2 = 10 5 *3 = 15 ………….*/
+
 import java.util.Scanner;
 
-public class Seventh {
+public class Eighth {
+
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
@@ -20,13 +29,14 @@ public class Seventh {
 
         for(int i = firstNumber; i <= lastNumber; i++){
 
-            if(i % 2 != 0)
-            {
-                System.out.println(i);
+            for(int j = 1; j < 11; j++){
+
+                int result = i * j;
+                System.out.println(i + " * " + j + " = " + result );
             }
+
         }
 
         scanner.close();
-
     }
 }
