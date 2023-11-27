@@ -54,7 +54,7 @@ public class Twelfth {
             }
         } else {
             System.out.println("Некорректное направление сортировки. Используйте 1 или 2.");
-            return;
+
         }
     }
 }
